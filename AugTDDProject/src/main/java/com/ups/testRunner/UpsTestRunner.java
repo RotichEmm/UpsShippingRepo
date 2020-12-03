@@ -2,8 +2,6 @@ package com.ups.testRunner;
 
 import java.util.concurrent.TimeUnit;
 
-
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,13 +18,13 @@ public class UpsTestRunner {
 	driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	
 	// identify all the webElement
-	WebElement closeCookiesBunner;
+	WebElement closeCookieBanner;
 	WebElement userId;
 	WebElement password;
 	WebElement logInBtn;
 	WebElement errorMsg;
 	
-	WebElement closeCookieBanner = driver.findElement(By.xpath("//*[@id='_tealiumImplicitmodal']/div/button/span[1]"));
+    closeCookieBanner = driver.findElement(By.xpath("//*[@id='_tealiumImplicitmodal']/div/button/span[1]"));
 	userId = driver.findElement(By.id("email"));
 	password = driver. findElement(By.name("password"));
 	logInBtn = driver.findElement(By.xpath("//*[@id='submitBtn']"));
@@ -37,6 +35,7 @@ public class UpsTestRunner {
 	logInBtn.click();
 
 	errorMsg = driver.findElement(By.xpath("//*[@id='errorMessages']"));
+	
 	String msg = errorMsg.getText();
 	return;
 
