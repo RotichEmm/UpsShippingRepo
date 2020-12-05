@@ -5,9 +5,9 @@
     <classes>
       <class name="com.ups.loginPage.UpsTestRunner">
         <methods>
+          <include name="ChromeDriverMethod"/>
           <include name="loginTest"/>
           <include name="noTest"/>
-          <include name="BeforeTest"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.ups.loginPage.UpsTestRunner -->
