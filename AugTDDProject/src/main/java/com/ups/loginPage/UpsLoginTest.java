@@ -1,22 +1,17 @@
-package com.ups.testRunner;
-
-import java.util.concurrent.TimeUnit;
+package com.ups.loginPage;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class UpsTestRunner {
-
-	public static void main(String[] args) {
-		
-		WebDriver  driver = new ChromeDriver();
- System.setProperty("webdriver.Chrome.driver", "chromedriver.exe");
-	driver.get("https://www.ups.com/lasso/login?");
-	driver.manage().window().maximize();
-	driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+public class UpsLoginTest {
 	
+	WebDriver driver = null;
+	public UpsLoginTest(WebDriver driver){
+		this.driver = driver;
+	}
+
+	public String upsLoginErrorTest(){
 	// identify all the webElement
 	WebElement closeCookieBanner;
 	WebElement userId;
@@ -37,7 +32,7 @@ public class UpsTestRunner {
 	errorMsg = driver.findElement(By.xpath("//*[@id='errorMessages']"));
 	
 	String msg = errorMsg.getText();
-	return;
+	return msg;
 
 	
 	}
