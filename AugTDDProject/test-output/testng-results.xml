@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-04T20:51:30 CST" name="Default suite" finished-at="2020-12-04T20:51:30 CST" duration-ms="106">
+  <suite started-at="2020-12-04T21:00:34 CST" name="Default suite" finished-at="2020-12-04T21:00:34 CST" duration-ms="94">
     <groups>
     </groups>
-    <test started-at="2020-12-04T20:51:30 CST" name="Default test" finished-at="2020-12-04T20:51:30 CST" duration-ms="106">
+    <test started-at="2020-12-04T21:00:34 CST" name="Default test" finished-at="2020-12-04T21:00:34 CST" duration-ms="94">
       <class name="com.ups.loginPage.UpsTestRunner">
-        <test-method is-config="true" signature="chromeDriverMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T20:51:30 CST" name="chromeDriverMethod" finished-at="2020-12-04T20:51:30 CST" duration-ms="12" status="FAIL">
+        <test-method is-config="true" signature="chromeDriverMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T21:00:34 CST" name="chromeDriverMethod" finished-at="2020-12-04T21:00:34 CST" duration-ms="8" status="FAIL">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[org/openqa/selenium/HasAuthentication]]>
@@ -32,7 +32,7 @@ at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClass
 at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:600)
 at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
 at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-at com.ups.loginPage.UpsTestRunner.chromeDriverMethod(UpsTestRunner.java:21)
+at com.ups.loginPage.UpsTestRunner.chromeDriverMethod(UpsTestRunner.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -76,7 +76,7 @@ at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromeDriverMethod -->
-        <test-method signature="loginTest()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T20:51:30 CST" name="loginTest" finished-at="2020-12-04T20:51:30 CST" duration-ms="0" status="SKIP">
+        <test-method signature="loginTest()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T21:00:34 CST" name="loginTest" finished-at="2020-12-04T21:00:34 CST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[org/openqa/selenium/HasAuthentication]]>
@@ -101,7 +101,7 @@ at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClass
 at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:600)
 at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
 at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-at com.ups.loginPage.UpsTestRunner.chromeDriverMethod(UpsTestRunner.java:21)
+at com.ups.loginPage.UpsTestRunner.chromeDriverMethod(UpsTestRunner.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -145,15 +145,15 @@ at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T20:51:30 CST" name="afterMethod" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1607136690913" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T21:00:34 CST" name="afterMethod" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1607137234826" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="chromeDriverMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T20:51:30 CST" name="chromeDriverMethod" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1607136690916" status="SKIP">
+        <test-method is-config="true" signature="chromeDriverMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T21:00:34 CST" name="chromeDriverMethod" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1607137234828" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chromeDriverMethod -->
-        <test-method signature="noTest()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T20:51:30 CST" name="noTest" finished-at="2020-12-04T20:51:30 CST" duration-ms="0" status="SKIP">
+        <test-method signature="noTest()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T21:00:34 CST" name="noTest" finished-at="2020-12-04T21:00:34 CST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NoClassDefFoundError">
             <message>
               <![CDATA[org/openqa/selenium/HasAuthentication]]>
@@ -178,7 +178,7 @@ at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClass
 at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:600)
 at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
 at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
-at com.ups.loginPage.UpsTestRunner.chromeDriverMethod(UpsTestRunner.java:21)
+at com.ups.loginPage.UpsTestRunner.chromeDriverMethod(UpsTestRunner.java:20)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -222,7 +222,7 @@ at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- noTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T20:51:30 CST" name="afterMethod" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1607136690931" status="SKIP">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@2f54a33d]" started-at="2020-12-04T21:00:34 CST" name="afterMethod" finished-at="1969-12-31T18:00:00 CST" duration-ms="-1607137234843" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
