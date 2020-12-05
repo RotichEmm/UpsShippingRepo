@@ -16,7 +16,7 @@ public class UpsTestRunner {
 	UpsLoginTest loginTest;
 
 	@BeforeMethod
-	public void chromeDriverMethod(){ 
+	public void BeforeTest(){ 
 
 		this.driver = new ChromeDriver();
 		this.loginTest = new UpsLoginTest(driver);
