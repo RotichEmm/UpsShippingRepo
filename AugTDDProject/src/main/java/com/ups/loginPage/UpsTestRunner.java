@@ -13,42 +13,38 @@ import org.testng.annotations.Test;
 public class UpsTestRunner {
 	
 	WebDriver driver;
-	UpsLoginTest loginTest;
+		UpsLoginTest loginTest;
 
-	@BeforeMethod
-	public void ChromeDriverMethod(){ 
-
-		this.driver = new ChromeDriver();
-		this.loginTest = new UpsLoginTest(driver);
-		System.setProperty("webdriver.Chrome.driver", "chromedriver.exe");
-		driver.get("https://www.ups.com/lasso/login?");
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-	}
-@Test
-void loginTest() {
-		String msg = loginTest.upsLoginErrorTest();
-		if (msg.contains("unsuccessful")) {
-			System.out.println("PASSED");
-		
-		}else {
-			fail();
+		@BeforeMethod
+		void chromeDriverMethod() {
+			this.driver = new ChromeDriver();
+			this.loginTest = new UpsLoginTest(driver);
+			System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
+			driver.get("https://www.ups.com/lasso/login?");
+			driver.manage().window().maximize();
+			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		}
+
+		@Test
+		void loginTest() {
+			String msg = loginTest.upsLoginErrorTest();
+			if (msg.contains("ryrtyyrt")) {
+				System.out.println("PASSED");
+			} else {
+				fail();
+			}
+		}
+
+		@Test
+		void noTest() {
+			System.out.println("NO TEST");
+		}
+
+		@AfterMethod
+		void afterMethod() throws InterruptedException {
+			Thread.sleep(2000);
+			driver.close();
+
+		}
+
 	}
-@Test
-void noTest() {
-	System.out.println("NO TEST");
-	
-}
-@AfterMethod
-void afterMethod() throws InterruptedException {
-	Thread.sleep(2000);
-	driver.close();
-}
-}
- 
-	
-
-	
-
-
