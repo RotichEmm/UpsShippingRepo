@@ -16,7 +16,8 @@ public class UpsTestRunner {
 	UpsLoginTest loginTest;
 
 	@BeforeMethod
-	void chromeDriverMethod(){
+	public void chromeDriverMethod(){ 
+
 		this.driver = new ChromeDriver();
 		this.loginTest = new UpsLoginTest(driver);
 		System.setProperty("webdriver.Chrome.driver", "chromedriver.exe");
