@@ -2,7 +2,6 @@ package com.ups.loginPage;
 
 import static org.testng.Assert.fail;
 
-
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
