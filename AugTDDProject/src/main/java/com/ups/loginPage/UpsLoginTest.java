@@ -27,8 +27,8 @@ public class UpsLoginTest {
 		logInBtn = driver.findElement(By.cssSelector("#submitBtn"));
 
 		closeCookieBanner.click();
-		userId.sendKeys("username");
-		password.sendKeys("password");
+		userId.sendKeys("mimi");
+		password.sendKeys("123456");
 		logInBtn.click();
 
 		errorMsg = driver.findElement(By.xpath("//*[@id='errorMessages']"));
