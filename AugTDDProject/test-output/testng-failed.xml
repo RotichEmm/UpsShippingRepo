@@ -7,7 +7,6 @@
         <methods>
           <include name="loginTest"/>
           <include name="chromeDriverMethod"/>
-          <include name="noTest"/>
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.ups.loginPage.UpsTestRunner -->
