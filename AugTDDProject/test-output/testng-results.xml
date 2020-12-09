@@ -2,18 +2,18 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-12-09T10:16:15 CST" name="Default suite" finished-at="2020-12-09T10:16:20 CST" duration-ms="4576">
+  <suite started-at="2020-12-09T11:14:21 CST" name="Default suite" finished-at="2020-12-09T11:14:26 CST" duration-ms="4707">
     <groups>
       <group name="SanityTest">
-        <method signature="UpsTestRunner.loginErrorMsgTest()[pri:1, instance:com.ups.loginPage.UpsTestRunner@c03cf28]" name="loginErrorMsgTest" class="com.ups.loginPage.UpsTestRunner"/>
+        <method signature="UpsTestRunner.loginErrorMsgTest()[pri:1, instance:com.ups.loginPage.UpsTestRunner@574b560f]" name="loginErrorMsgTest" class="com.ups.loginPage.UpsTestRunner"/>
       </group> <!-- SanityTest -->
       <group name="RegressionTest">
-        <method signature="UpsTestRunner.forgotLinkTest()[pri:2, instance:com.ups.loginPage.UpsTestRunner@c03cf28]" name="forgotLinkTest" class="com.ups.loginPage.UpsTestRunner"/>
+        <method signature="UpsTestRunner.forgotLinkTest()[pri:2, instance:com.ups.loginPage.UpsTestRunner@574b560f]" name="forgotLinkTest" class="com.ups.loginPage.UpsTestRunner"/>
       </group> <!-- RegressionTest -->
     </groups>
-    <test started-at="2020-12-09T10:16:15 CST" name="Default test" finished-at="2020-12-09T10:16:20 CST" duration-ms="4576">
+    <test started-at="2020-12-09T11:14:21 CST" name="Default test" finished-at="2020-12-09T11:14:26 CST" duration-ms="4707">
       <class name="com.ups.loginPage.UpsTestRunner">
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@c03cf28]" started-at="2020-12-09T10:16:15 CST" name="beforeMethod" finished-at="2020-12-09T10:16:16 CST" duration-ms="454" status="FAIL">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@574b560f]" started-at="2020-12-09T11:14:21 CST" name="beforeMethod" finished-at="2020-12-09T11:14:22 CST" duration-ms="582" status="FAIL">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The driver executable does not exist: C:\absolute\path\to\binary\chromedriver]]>
@@ -68,7 +68,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="loginErrorMsgTest()[pri:1, instance:com.ups.loginPage.UpsTestRunner@c03cf28]" started-at="2020-12-09T10:16:16 CST" name="loginErrorMsgTest" finished-at="2020-12-09T10:16:16 CST" duration-ms="0" status="SKIP">
+        <test-method signature="loginErrorMsgTest()[pri:1, instance:com.ups.loginPage.UpsTestRunner@574b560f]" started-at="2020-12-09T11:14:22 CST" name="loginErrorMsgTest" finished-at="2020-12-09T11:14:22 CST" duration-ms="0" status="SKIP">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The driver executable does not exist: C:\absolute\path\to\binary\chromedriver]]>
@@ -123,7 +123,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginErrorMsgTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@c03cf28]" started-at="2020-12-09T10:16:16 CST" name="afterMethod" finished-at="2020-12-09T10:16:18 CST" duration-ms="2015" status="FAIL">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@574b560f]" started-at="2020-12-09T11:14:22 CST" name="afterMethod" finished-at="2020-12-09T11:14:24 CST" duration-ms="2006" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null]]>
@@ -170,7 +170,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@c03cf28]" started-at="2020-12-09T10:16:18 CST" name="beforeMethod" finished-at="2020-12-09T10:16:18 CST" duration-ms="19" status="FAIL">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@574b560f]" started-at="2020-12-09T11:14:24 CST" name="beforeMethod" finished-at="2020-12-09T11:14:24 CST" duration-ms="14" status="FAIL">
           <exception class="java.lang.IllegalStateException">
             <message>
               <![CDATA[The driver executable does not exist: C:\absolute\path\to\binary\chromedriver]]>
@@ -225,14 +225,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="forgotLinkTest()[pri:2, instance:com.ups.loginPage.UpsTestRunner@c03cf28]" started-at="2020-12-09T10:16:18 CST" name="forgotLinkTest" finished-at="2020-12-09T10:16:18 CST" duration-ms="0" status="SKIP">
-          <exception class="java.lang.NullPointerException">
+        <test-method signature="forgotLinkTest()[pri:2, instance:com.ups.loginPage.UpsTestRunner@574b560f]" started-at="2020-12-09T11:14:24 CST" name="forgotLinkTest" finished-at="2020-12-09T11:14:24 CST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.IllegalStateException">
             <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null]]>
+              <![CDATA[The driver executable does not exist: C:\absolute\path\to\binary\chromedriver]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null
-at com.ups.loginPage.UpsTestRunner.afterMethod(UpsTestRunner.java:59)
+              <![CDATA[java.lang.IllegalStateException: The driver executable does not exist: C:\absolute\path\to\binary\chromedriver
+at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:123)
+at com.ups.drivers.UpsDrivers.getChromeDriver(UpsDrivers.java:15)
+at com.ups.loginPage.UpsTestRunner.beforeMethod(UpsTestRunner.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -242,8 +251,7 @@ at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(Met
 at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
 at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:548)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
@@ -268,11 +276,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgotLinkTest -->
-        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@c03cf28]" started-at="2020-12-09T10:16:18 CST" name="afterMethod" finished-at="2020-12-09T10:16:20 CST" duration-ms="2013" status="FAIL">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.ups.loginPage.UpsTestRunner@574b560f]" started-at="2020-12-09T11:14:24 CST" name="afterMethod" finished-at="2020-12-09T11:14:26 CST" duration-ms="2002" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.close()" because "this.driver" is null]]>

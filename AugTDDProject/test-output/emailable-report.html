@@ -9,9 +9,9 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">4,576</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">0</td><td class="num attn">2</td><td class="num">0</td><td class="num">0</td><td class="num">4,707</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="4">com.ups.loginPage.UpsTestRunner</td><td><a href="#m0">afterMethod</a></td><td rowspan="2">1607530578272</td><td rowspan="2">2013</td></tr><tr class="failedeven"><td><a href="#m1">afterMethod</a></td></tr><tr class="failedeven"><td><a href="#m2">beforeMethod</a></td><td rowspan="2">1607530578238</td><td rowspan="2">19</td></tr><tr class="failedeven"><td><a href="#m3">beforeMethod</a></td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.ups.loginPage.UpsTestRunner</td><td><a href="#m4">forgotLinkTest</a></td><td rowspan="1">1607530578260</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">loginErrorMsgTest</a></td><td rowspan="1">1607530576208</td><td rowspan="1">0</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="4">com.ups.loginPage.UpsTestRunner</td><td><a href="#m0">afterMethod</a></td><td rowspan="2">1607534064481</td><td rowspan="2">2002</td></tr><tr class="failedeven"><td><a href="#m1">afterMethod</a></td></tr><tr class="failedeven"><td><a href="#m2">beforeMethod</a></td><td rowspan="2">1607534061828</td><td rowspan="2">582</td></tr><tr class="failedeven"><td><a href="#m3">beforeMethod</a></td></tr><tr><th colspan="4">Default test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="2">com.ups.loginPage.UpsTestRunner</td><td><a href="#m4">forgotLinkTest</a></td><td rowspan="1">1607534064471</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m5">loginErrorMsgTest</a></td><td rowspan="1">1607534062420</td><td rowspan="1">0</td></tr></tbody>
 </table>
 <h2>Default test</h2><h3 id="m0">com.ups.loginPage.UpsTestRunner#afterMethod</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
 	at com.ups.loginPage.UpsTestRunner.afterMethod(UpsTestRunner.java:59)
@@ -173,8 +173,17 @@
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">com.ups.loginPage.UpsTestRunner#forgotLinkTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.close()&quot; because &quot;this.driver&quot; is null
-	at com.ups.loginPage.UpsTestRunner.afterMethod(UpsTestRunner.java:59)
+<h3 id="m4">com.ups.loginPage.UpsTestRunner#forgotLinkTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.IllegalStateException: The driver executable does not exist: C:\absolute\path\to\binary\chromedriver
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.ups.drivers.UpsDrivers.getChromeDriver(UpsDrivers.java:15)
+	at com.ups.loginPage.UpsTestRunner.beforeMethod(UpsTestRunner.java:23)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -184,8 +193,7 @@
 	at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:366)
 	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:320)
 	at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:701)
-	at org.testng.internal.TestInvoker.runAfterGroupsConfigurations(TestInvoker.java:677)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:548)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
 	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
 	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
