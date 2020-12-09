@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Ups CrossBrowserTest Suite" thread-count="2"parallel="Tests">
+<test name="ChromeBrowser">
+<parameter name ="browser" value="ChromeBrowser"/>
+    <classes>
+      <class name="com.ups.loginPage.UpsTestRunner"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name = "FirefoxBrowser">
+  <parameter name ="browser" value="FirefoxBrowser"/>
+  <classes>
+      <class name="com.ups.loginPage.UpsTestRunner"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
