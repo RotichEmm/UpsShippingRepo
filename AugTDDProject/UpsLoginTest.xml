@@ -3,13 +3,17 @@
 <suite name=" UpsLoginPageTest Suite">
 <test thread-count="5" name="UpsLoginPageTest">
  <parameter name = "browser" value="ChromeBrowser" />
-  <classes>
-  
-  	<class name ="com.ups.testRunner.UpsLoginTestRunner"/>
+
+ <classes>
+ <class name ="com.ups.testRunner.UpsLoginTestRunner">
  	<methods>
  	<include name =" loginErrorMsgTest"/>
  	<exclude  name =" forgotLinkTest"/>
+		
 		 </methods>
- 	</classes>
+		 
+		</class> <!--class--> 
+ 	</classes> 
+ 	
   </test> <!-- Test -->
 </suite> <!-- Suite -->
