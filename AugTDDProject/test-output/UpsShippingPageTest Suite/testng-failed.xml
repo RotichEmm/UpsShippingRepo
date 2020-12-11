@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UpsShippingPageTest Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UpsShippingPageTest(failed)">
+    <classes>
+      <class name="com.ups.testRunner.UpsShippingTestRunner">
+        <methods>
+          <include name="shippingErrorMsgTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="canceShipmentLinkTest"/>
+        </methods>
+      </class> <!-- com.ups.testRunner.UpsShippingTestRunner -->
+    </classes>
+  </test> <!-- UpsShippingPageTest(failed) -->
+</suite> <!-- Failed suite [UpsShippingPageTest Suite] -->

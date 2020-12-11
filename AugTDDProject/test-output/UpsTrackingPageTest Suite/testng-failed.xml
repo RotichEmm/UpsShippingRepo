@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [UpsTrackingPageTest Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="UpsTrackingPageTest(failed)">
+    <classes>
+      <class name="com.ups.testRunner.UpsTrackingTestRunner">
+        <methods>
+          <include name="trackingErrorMsgTest"/>
+          <include name="beforeMethod"/>
+          <include name="trackBtnLinkTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.ups.testRunner.UpsTrackingTestRunner -->
+    </classes>
+  </test> <!-- UpsTrackingPageTest(failed) -->
+</suite> <!-- Failed suite [UpsTrackingPageTest Suite] -->

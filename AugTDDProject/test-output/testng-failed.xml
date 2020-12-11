@@ -3,14 +3,30 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ups.loginPage.UpsTestRunner">
+      <class name="com.ups.testRunner.UpsShippingTestRunner">
+        <methods>
+          <include name="shippingErrorMsgTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="canceShipmentLinkTest"/>
+        </methods>
+      </class> <!-- com.ups.testRunner.UpsShippingTestRunner -->
+      <class name="com.ups.testRunner.UpsLoginTestRunner">
         <methods>
           <include name="loginErrorMsgTest"/>
           <include name="beforeMethod"/>
           <include name="forgotLinkTest"/>
           <include name="afterMethod"/>
         </methods>
-      </class> <!-- com.ups.loginPage.UpsTestRunner -->
+      </class> <!-- com.ups.testRunner.UpsLoginTestRunner -->
+      <class name="com.ups.testRunner.UpsTrackingTestRunner">
+        <methods>
+          <include name="trackingErrorMsgTest"/>
+          <include name="beforeMethod"/>
+          <include name="trackBtnLinkTest"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.ups.testRunner.UpsTrackingTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

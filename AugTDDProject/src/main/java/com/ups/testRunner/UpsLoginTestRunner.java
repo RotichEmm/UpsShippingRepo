@@ -1,24 +1,24 @@
-package com.ups.loginPage;
+package com.ups.testRunner;
 
 import static org.testng.Assert.fail;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.pageActions.UpsLoginPageActions;
 import com.ups.drivers.UpsDrivers;
 
-public class UpsTestRunner extends UpsDrivers {
+public class UpsLoginTestRunner extends UpsDrivers {
 	
 	WebDriver driver;
 		UpsLoginPageActions loginTest;
 
-		@BeforeMethod (alwaysRun = true)
+		@BeforeTest (alwaysRun = true)
+		@Parameters(value = {"browser"})
 		void beforeMethod() {
 			this.driver = getChromeDriver();
 			this.loginTest = new UpsLoginPageActions(driver);
@@ -53,7 +53,7 @@ public class UpsTestRunner extends UpsDrivers {
 			
 		}
 
-		@AfterMethod(alwaysRun = true)
+		@AfterTest(alwaysRun = true)
 		void afterMethod() throws InterruptedException {
 			Thread.sleep(2000);
 			driver.close();
