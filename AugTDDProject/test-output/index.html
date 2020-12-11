@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Emm\AppData\Local\Temp\testng-eclipse--1115547507\testng-customsuite.xml</span>
+                    <span>C:\Users\Emm\AppData\Local\Temp\testng-eclipse-1184273090\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -155,13 +155,15 @@
                   <a name="canceShipmentLinkTest">
                   </a> <!-- canceShipmentLinkTest -->
                   <span class="method-name">canceShipmentLinkTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;WINDOWS-1TQF3AJ&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:53728}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5ad39f6a4189113cd6641755947d2443
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cc6520bbecd78bd4716e5ed484426506
+*** Element info: {Using=xpath, value=//*[@id=&apos;__tealiumImplicitmodal&apos;]/div/button/span[1]}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -173,8 +175,11 @@ Session ID: 5ad39f6a4189113cd6641755947d2443
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.ups.pageElements.UpsShippingPageElements.upsPageCloseCookieBanner(UpsShippingPageElements.java:18)
 	at com.pageActions.UpsShippingPageActions.closeCookieBanner(UpsShippingPageActions.java:19)
 	at com.ups.testRunner.UpsShippingTestRunner.canceShipmentLinkTest(UpsShippingTestRunner.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
@@ -214,13 +219,15 @@ Session ID: 5ad39f6a4189113cd6641755947d2443
                   <a name="shippingErrorMsgTest">
                   </a> <!-- shippingErrorMsgTest -->
                   <span class="method-name">shippingErrorMsgTest</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+                  <div class="stack-trace">org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
   (Session info: chrome=87.0.4280.88)
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;WINDOWS-1TQF3AJ&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:53728}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 5ad39f6a4189113cd6641755947d2443
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54626}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: cc6520bbecd78bd4716e5ed484426506
+*** Element info: {Using=name, value=cac_country}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -232,10 +239,13 @@ Session ID: 5ad39f6a4189113cd6641755947d2443
 	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
-	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
-	at com.pageActions.UpsShippingPageActions.closeCookieBanner(UpsShippingPageActions.java:19)
-	at com.ups.testRunner.UpsShippingTestRunner.shippingErrorMsgTest(UpsShippingTestRunner.java:34)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+	at org.openqa.selenium.By$ByName.findElement(By.java:284)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at com.ups.pageElements.UpsShippingPageElements.country(UpsShippingPageElements.java:23)
+	at com.pageActions.UpsShippingPageActions.setCountry(UpsShippingPageActions.java:23)
+	at com.ups.testRunner.UpsShippingTestRunner.shippingErrorMsgTest(UpsShippingTestRunner.java:35)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -286,8 +296,8 @@ Session ID: 5ad39f6a4189113cd6641755947d2443
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;WINDOWS-1TQF3AJ&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:53641}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 6cac931e48c0b006a5bd3e56cd110e1a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54537}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 3da65297eec9ff1fe301f77dd9734bcd
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -389,27 +399,12 @@ Session ID: 6cac931e48c0b006a5bd3e56cd110e1a
                   <a name="trackBtnLinkTest">
                   </a> <!-- trackBtnLinkTest -->
                   <span class="method-name">trackBtnLinkTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#stApp_btnTrack&quot;}
-  (Session info: chrome=87.0.4280.88)
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Cannot locate an element using id=stApp_btnTrack
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;WINDOWS-1TQF3AJ&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54001}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: 43ce619588673dd66fdd5570d09732cf
-*** Element info: {Using=id, value=stApp_btnTrack}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:327)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
 	at org.openqa.selenium.By$ById.findElement(By.java:188)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
@@ -459,8 +454,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;WINDOWS-1TQF3AJ&apos;, ip: &apos;192.168.1.31&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:53842}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
-Session ID: c9d57c3bdc18d96f99c03435137fe6cf
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.88, chrome: {chromedriverVersion: 87.0.4280.88 (89e2380a3e36c..., userDataDir: C:\Users\Emm\AppData\Local\...}, goog:chromeOptions: {debuggerAddress: localhost:54717}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: 7cd7de3bbd827daf642b77909ad4e01b
 *** Element info: {Using=id, value=stApp_btnTrack}
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -517,7 +512,7 @@ Session ID: c9d57c3bdc18d96f99c03435137fe6cf
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Emm\AppData\Local\Temp\testng-eclipse--1115547507\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Emm\AppData\Local\Temp\testng-eclipse-1184273090\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -528,17 +523,10 @@ Session ID: c9d57c3bdc18d96f99c03435137fe6cf
     &lt;classes&gt;
       &lt;class name=&quot;com.ups.testRunner.UpsLoginTestRunner&quot;/&gt;
       &lt;class name=&quot;com.ups.testRunner.UpsShippingTest&quot;/&gt;
-      &lt;class name=&quot;com.pageActions.UpsTrackingPageActions&quot;/&gt;
-      &lt;class name=&quot;com.ups.pageElements.UpsShippingPageElements&quot;/&gt;
-      &lt;class name=&quot;com.ups.testRunner.UpsLoginTest&quot;/&gt;
-      &lt;class name=&quot;com.ups.testRunner.UpsShippingTestRunner&quot;/&gt;
-      &lt;class name=&quot;com.pageActions.UpsLoginPageActions&quot;/&gt;
-      &lt;class name=&quot;com.ups.pageElements.UpsTrackingPageElements&quot;/&gt;
-      &lt;class name=&quot;com.ups.drivers.UpsDrivers&quot;/&gt;
-      &lt;class name=&quot;com.ups.pageElements.UpsLoginPageElements&quot;/&gt;
       &lt;class name=&quot;com.ups.testRunner.UpsTrackingTestRunner&quot;/&gt;
+      &lt;class name=&quot;com.ups.testRunner.UpsLoginTest&quot;/&gt;
       &lt;class name=&quot;com.ups.testRunner.UpsTrackingTest&quot;/&gt;
-      &lt;class name=&quot;com.pageActions.UpsShippingPageActions&quot;/&gt;
+      &lt;class name=&quot;com.ups.testRunner.UpsShippingTestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -552,7 +540,7 @@ Session ID: c9d57c3bdc18d96f99c03435137fe6cf
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (13 classes)</span>
+                <span class="test-name">Default test (6 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -612,34 +600,34 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(6);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'trackBtnLinkTest')
+data.setCell(0, 1, 'trackingErrorMsgTest')
 data.setCell(0, 2, 'com.ups.testRunner.UpsTrackingTestRunner')
-data.setCell(0, 3, 15236);
+data.setCell(0, 3, 15204);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'trackingErrorMsgTest')
-data.setCell(1, 2, 'com.ups.testRunner.UpsTrackingTestRunner')
-data.setCell(1, 3, 15224);
+data.setCell(1, 1, 'forgotLinkTest')
+data.setCell(1, 2, 'com.ups.testRunner.UpsLoginTestRunner')
+data.setCell(1, 3, 15144);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'forgotLinkTest')
-data.setCell(2, 2, 'com.ups.testRunner.UpsLoginTestRunner')
-data.setCell(2, 3, 15150);
+data.setCell(2, 1, 'trackBtnLinkTest')
+data.setCell(2, 2, 'com.ups.testRunner.UpsTrackingTestRunner')
+data.setCell(2, 3, 7236);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'shippingErrorMsgTest')
 data.setCell(3, 2, 'com.ups.testRunner.UpsShippingTestRunner')
-data.setCell(3, 3, 15106);
+data.setCell(3, 3, 3278);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'canceShipmentLinkTest')
-data.setCell(4, 2, 'com.ups.testRunner.UpsShippingTestRunner')
-data.setCell(4, 3, 15088);
+data.setCell(4, 1, 'loginErrorMsgTest')
+data.setCell(4, 2, 'com.ups.testRunner.UpsLoginTestRunner')
+data.setCell(4, 3, 2855);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'loginErrorMsgTest')
-data.setCell(5, 2, 'com.ups.testRunner.UpsLoginTestRunner')
-data.setCell(5, 3, 2564);
+data.setCell(5, 1, 'canceShipmentLinkTest')
+data.setCell(5, 2, 'com.ups.testRunner.UpsShippingTestRunner')
+data.setCell(5, 3, 8);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 43 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -675,7 +663,7 @@ return data;
               <div class="chronological-class-name">com.ups.testRunner.UpsShippingTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">beforeMethod</span>
-                <span class="method-start">10294 ms</span>
+                <span class="method-start">10718 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -684,14 +672,47 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">loginErrorMsgTest</span>
-                <span class="method-start">19719 ms</span>
+                <span class="method-start">19092 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">forgotLinkTest</span>
-                <span class="method-start">22293 ms</span>
+                <span class="method-start">21956 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ups.testRunner.UpsTrackingTestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">37106 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">trackingErrorMsgTest</span>
+                <span class="method-start">46111 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">61321 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">63513 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">trackBtnLinkTest</span>
+                <span class="method-start">71861 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">79101 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ups.testRunner.UpsShippingTestRunner</div> <!-- chronological-class-name -->
@@ -699,58 +720,29 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">shippingErrorMsgTest</span>
-                <span class="method-start">37451 ms</span>
+                <span class="method-start">85205 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">canceShipmentLinkTest</span>
-                <span class="method-start">52566 ms</span>
+                <span class="method-start">88492 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.ups.testRunner.UpsTrackingTestRunner</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">67662 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">trackingErrorMsgTest</span>
-                <span class="method-start">75810 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">91040 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod</span>
-                <span class="method-start">93202 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">trackBtnLinkTest</span>
-                <span class="method-start">101567 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">afterMethod</span>
-                <span class="method-start">116809 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ups.testRunner.UpsLoginTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">118969 ms</span>
+                <span class="method-start">88505 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.ups.testRunner.UpsShippingTestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">121078 ms</span>
+                <span class="method-start">90658 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
