@@ -3,14 +3,6 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ups.testRunner.UpsShippingTestRunner">
-        <methods>
-          <include name="shippingErrorMsgTest"/>
-          <include name="beforeMethod"/>
-          <include name="afterMethod"/>
-          <include name="canceShipmentLinkTest"/>
-        </methods>
-      </class> <!-- com.ups.testRunner.UpsShippingTestRunner -->
       <class name="com.ups.testRunner.UpsLoginTestRunner">
         <methods>
           <include name="loginErrorMsgTest"/>
@@ -27,6 +19,14 @@
           <include name="afterMethod"/>
         </methods>
       </class> <!-- com.ups.testRunner.UpsTrackingTestRunner -->
+      <class name="com.ups.testRunner.UpsShippingTestRunner">
+        <methods>
+          <include name="shippingErrorMsgTest"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="canceShipmentLinkTest"/>
+        </methods>
+      </class> <!-- com.ups.testRunner.UpsShippingTestRunner -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
